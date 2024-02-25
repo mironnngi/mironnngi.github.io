@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kokshe.ava</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Цвет текста */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid #ffbf00; /* Жёлтая граница снизу */
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px; /* Размер заголовка */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .avatar, .nickname {
+            float: left;
+            width: calc(50% - 20px); /* Ширина элементов */
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            border-radius: 10px; /* Закругление углов */
+        }
+        .avatar:hover, .nickname:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .avatar img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Скругление углов для изображения */
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            border-top: 3px solid #ffbf00; /* Жёлтая граница сверху */
+            position: relative; /* Относительное позиционирование */
+            z-index: 1; /* Устанавливаем футер выше остальных элементов */
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            border: 1px solid #fff;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px; /* Закругление углов кнопки */
+        }
+        footer a:hover {
+            background-color: #555;
+        }
+        .about-us {
+            background-color: #f3f3f3; /* Цвет фона */
+            padding: 20px;
+            border-radius: 10px; /* Закругление углов */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+        .about-us h2 {
+            color: #333; /* Цвет заголовка */
+        }
+        .about-us p {
+            line-height: 1.6; /* Межстрочный интервал */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>kokshe.ava</h1>
+    </header>
+    <div class="about-us">
+        <h2>О нас</h2>
+        <p>Мы - команда "kokshe.ava", предлагаем широкий выбор аватарок и никнеймов высокого качества по доступным ценам.</p>
+    </div>
+    <div class="container">
+        <div class="avatar">
+            <h2>Аватарки</h2>
+            <p>Цена: От 200 Тенге до 400 </p>
+            <a href="https://www.instagram.com/kokshe.ava/"><button style="background-color: #ffbf00; color: #333;">Купить</button></a>
+        </div>
+
+        <div class="nickname">
+            <h2>Никнеймы</h2>
+            <ul>
+                <li>nickname simple - 100 Тенге</li>
+                <li>nickname premium - 150 Тенге</li>
+                <li>nickname VIP - 200 Тенге</li>
+            </ul>
+            <a href="https://www.instagram.com/kokshe.ava/"><button style="background-color: #ffbf00; color: #333;">Купить</button></a>
+        </div>
+        
+        <div class="nickname">
+            <h2>СКИДКА 20 ДНЕЙ</h2>
+            <ul>
+                <li>В ЧЕСТЬ ОТКРЫТИЯ МАГАЗИНА СКИДКА ИДЁТ 20 ДНЕЙ</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 kokshe.ava</p>
+    </footer>
+</body>
+</html>
